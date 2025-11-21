@@ -1,0 +1,7 @@
+#для начала работы выполни следующие команды
+
+python -m venv .venv       # создаём новое виртуальное окружение
+
+.venv\Scripts\activate     # Windows
+
+pip install -r requirements.txt 
