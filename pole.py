@@ -34,16 +34,16 @@ def draw_marker_vectors(frame, corners):
     c = corners.reshape((4, 2)).astype(int)
 
     # Вектора сторон
-    v_top    = c[1] - c[0]   # верхняя сторона
-    v_right  = c[2] - c[1]   # правая
-    v_bottom = c[3] - c[2]   # нижняя
-    v_left   = c[0] - c[3]   # левая
+    # v_top    = c[1] - c[0]   # верхняя сторона
+    # v_right  = c[2] - c[1]   # правая
+    # v_bottom = c[3] - c[2]   # нижняя
+    # v_left   = c[0] - c[3]   # левая
 
     # Рисуем стрелки
-    cv2.arrowedLine(frame, tuple(c[0]), tuple(c[1]), (0,0,255), 2) # сверху
-    cv2.arrowedLine(frame, tuple(c[1]), tuple(c[2]), (0,255,0), 2) # справа
-    cv2.arrowedLine(frame, tuple(c[2]), tuple(c[3]), (255,0,0), 2) # снизу
-    cv2.arrowedLine(frame, tuple(c[3]), tuple(c[0]), (255,255,0), 2) # слева
+    # cv2.arrowedLine(frame, tuple(c[0]), tuple(c[1]), (0,0,255), 2) # сверху
+    # cv2.arrowedLine(frame, tuple(c[1]), tuple(c[2]), (0,255,0), 2) # справа
+    # cv2.arrowedLine(frame, tuple(c[2]), tuple(c[3]), (255,0,0), 2) # снизу
+    # cv2.arrowedLine(frame, tuple(c[3]), tuple(c[0]), (255,255,0), 2) # слева
 
 def draw_zone(frame, marker_positions):
     """
